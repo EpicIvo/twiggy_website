@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2e2e2e; }
+
+.header {
+  height: 90vh;
+  width: 100%; }
+  .header .headerImageContainer {
+    background-image: url("../media/dropletsBackground.jpg");
+    background-size: 100%;
+    background-position-y: 100%;
+    width: 100%;
+    height: 100vh; }
+    .header .headerImageContainer .topBar {
+      width: 100%;
+      height: 35px;
+      background-color: #ffffff; }
+    .header .headerImageContainer .title {
+      color: #ffffff;
+      text-align: center;
+      letter-spacing: 20px;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 7em; }
+    .header .headerImageContainer .middleSection .gameOnPhoneContainer {
+      display: inline-block;
+      width: 50%; }
+      .header .headerImageContainer .middleSection .gameOnPhoneContainer .gameOnPhoneImage {
+        width: 75%;
+        transition-duration: 3s;
+        margin-left: 15%;
+        margin-top: 14%; }
+    .header .headerImageContainer .middleSection .introTextContainer {
+      display: inline-block;
+      color: #ffffff;
+      width: 50%;
+      float: right;
+      text-align: center; }
+      .header .headerImageContainer .middleSection .introTextContainer .introText {
+        font-style: italic;
+        padding-top: 35%;
+        width: 400px;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 2.5em; }
+    .header .headerImageContainer .bottomBar {
+      position: fixed;
+      width: 100%;
+      height: 10vh;
+      bottom: 0;
+      left: 0;
+      background-color: #ffffff;
+      display: inline-block;
+      border-top-color: black;
+      border-top-style: solid;
+      border-top-width: 2px; }
+      .header .headerImageContainer .bottomBar .companyCopyrightContainer {
+        display: inline-block;
+        width: 20%; }
+        .header .headerImageContainer .bottomBar .companyCopyrightContainer .companyCopyright {
+          line-height: 100px;
+          color: #2e2e2e;
+          padding-left: 20px;
+          font-family: "Ubuntu", sans-serif;
+          font-size: 1em; }
+      .header .headerImageContainer .bottomBar .menuContainer {
+        text-align: center;
+        display: inline-block;
+        width: 80%;
+        float: right; }
+        .header .headerImageContainer .bottomBar .menuContainer .menu {
+          line-height: 10vh; }
+          .header .headerImageContainer .bottomBar .menuContainer .menu .menuItemContainer {
+            display: inline-block;
+            margin-right: 20%; }
+          .header .headerImageContainer .bottomBar .menuContainer .menu .menuItem {
+            display: inline-block;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 1.5em; }
+          .header .headerImageContainer .bottomBar .menuContainer .menu .menuItemLink {
+            position: relative;
+            color: #000;
+            text-decoration: none; }
+          .header .headerImageContainer .bottomBar .menuContainer .menu .menuItemLink:hover {
+            color: #000; }
+          .header .headerImageContainer .bottomBar .menuContainer .menu .menuItemLink:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #000;
+            visibility: hidden;
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s; }
+          .header .headerImageContainer .bottomBar .menuContainer .menu .menuItemLink:hover:before {
+            visibility: visible;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1); }
+
+.sectionOne {
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff; }
+  .sectionOne .FirstSectionTitle {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 5em; }
+
+/*# sourceMappingURL=index.css.map */
