@@ -8,158 +8,36 @@ $UbuntuFont: 'Ubuntu', sans-serif;
 body {
   margin: 0;
   padding: 0;
-  background-color: #2e2e2e;
 }
 
-// Header
-.header {
-  height: 90vh;
-  width: $totalWidth;
-  .headerImageContainer {
-    background: {
-      image: url('../media/dropletsBackground.jpg');
-      size: 100%;
-      position-y: 100%;
-    }
-    width: $totalWidth;
+.container{
+  height: 400vh;
+  .overlayAnimations{
     height: $totalHeight;
-    .topBar {
-      width: $totalWidth;
-      height: 35px;
-      background-color: #ffffff;
-    }
-    .title {
-      color: #ffffff;
-      text-align: center;
-      letter-spacing: 20px;
-      font: {
-        family: $UbuntuFont;
-        size: 7em;
-      }
-    }
-    .middleSection {
-      .gameOnPhoneContainer {
-        display: inline-block;
-        width: 50%;
-        .gameOnPhoneImage {
-          width: 75%;
-          transition-duration: 3s;
-          margin: {
-            left: 15%;
-            top: 14%;
-          }
-        }
-      }
-      .introTextContainer {
-        display: inline-block;
-        color: #ffffff;
-        width: 50%;
-        float: right;
-        text-align: center;
-        .introText {
-          font-style: italic;
-          padding: {
-            top: 35%;
-          }
-          width: 400px;
-          font: {
-            family: $UbuntuFont;
-            size: 2.5em;
-          }
-        }
-      }
-    }
-    .bottomBar {
-      position: fixed;
-      width: $totalWidth;
-      height: 10vh;
-      bottom: 0;
-      left: 0;
-      background-color: #ffffff;
-      display: inline-block;
-      border-top: {
-        color: black;
-        style: solid;
-        width: 2px;
-      }
-      .companyCopyrightContainer {
-        display: inline-block;
-        width: 20%;
-        .companyCopyright {
-          line-height: 100px;
-          color: #2e2e2e;
-          padding: {
-            left: 20px;
-          }
-          font: {
-            family: $UbuntuFont;
-            size: 1em;
-          }
-        }
-      }
-      .menuContainer {
-        text-align: center;
-        display: inline-block;
-        width: 80%;
-        float: right;
-        .menu {
-          line-height: 10vh;
-          .menuItemContainer{
-            display: inline-block;
-            margin-right: 20%;
-          }
-          .menuItem {
-            display: inline-block;
-            font: {
-              family: $UbuntuFont;
-              size: 1.5em;
-            }
-          }
-          .menuItemLink {
-            position: relative;
-            color: #000;
-            text-decoration: none;
-          }
-          .menuItemLink:hover {
-            color: #000;
-          }
-          .menuItemLink:before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 2px;
-            bottom: 0;
-            left: 0;
-            background-color: #000;
-            visibility: hidden;
-            -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transition: all 0.3s ease-in-out 0s;
-            transition: all 0.3s ease-in-out 0s;
-          }
-          .menuItemLink:hover:before {
-            visibility: visible;
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-          }
-        }
-      }
-    }
-  }
-}
-
-// First section
-.sectionOne{
-  height: $totalHeight;
-  width: $totalWidth;
-  background-color: #ffffff;
-  .FirstSectionTitle{
     width: $totalWidth;
-    background-color: white;
-    text-align: center;
-    font: {
-      family: $UbuntuFont;
-      size: 5em;
+    .skyBackgroundImage{
+      width: $totalWidth;
+      position: fixed;
+    }
+    .mainHillImage{
+      width: $totalWidth;
+      position: fixed;
+      bottom: 0;
+    }
+    .secondHillImage{
+      width: $totalWidth;
+      position: fixed;
+      bottom: 0;
+    }
+    .thirdHillImage{
+      width: $totalWidth;
+      position: fixed;
+      bottom: 0;
+    }
+    .mountain1Image{
+      width: $totalWidth;
+      position: fixed;
+      bottom: -80%;
     }
   }
 }

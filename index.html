@@ -4,66 +4,40 @@
     <meta charset="UTF-8">
     <title>Twiggy</title>
     <link href="style/index.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script type="text/javascript" src="scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
 </head>
-<body onscroll="scroll()" id="body">
+<body>
+<div class="container">
+    <section class="overlayAnimations">
+        <!--MAIN BG-->
+        <img src="media/skyBackground.png" class="skyBackgroundImage">
+        <!--SECTION TWO ANIMATION-->
+        <img src="media/mountain1.png" class="mountain1Image" id="mountain1Image">
+        <!--SECTION ONE ANIMATION-->
+        <img src="media/secondHill.png" class="secondHillImage" id="secondHillImage">
+        <img src="media/thirdHill.png" class="thirdHillImage" id="thirdHillImage">
+        <!--MAIN FRONT-->
+        <img src="media/mainHill.png" class="mainHillImage">
+    </section>
 
-<!-- Home section -->
-<div class="header" id="header">
-    <div class="headerImageContainer">
-        <div class="middleSection">
-            <div class="gameOnPhoneContainer">
-                <img class="gameOnPhoneImage" id="gameOnPhoneImage" src="media/gameOnPhone.png">
-            </div>
-            <div class="introTextContainer">
-                <div class="introText">
-                    "Door middel van gamification helpen wij de natuur, speelt u mee?"
-                </div>
-            </div>
-        </div>
-        <div class="bottomBar">
-            <div class="companyCopyrightContainer">
-                <div class="companyCopyright">
-                    &copy;Twiggy 2016
-                </div>
-            </div>
-            <div class="menuContainer">
-                <div class="menu">
-                    <div class="menuItemContainer">
-                        <a href="#sectionOne" class="menuItemLink">
-                            <div class="menuItem">
-                                Het probleem
-                            </div>
-                        </a>
-                    </div>
-                    <div class="menuItemContainer">
-                        <a href="#" class="menuItemLink">
-                            <div class="menuItem">
-                                Ons concept
-                            </div>
-                        </a>
-                    </div>
+    <section class="home">
+    </section>
 
-                    <div class="menuItemContainer">
-                        <a href="#" class="menuItemLink">
-                            <div class="menuItem">
-                                Het team
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <section class="play">
+    </section>
+
+    <section class="earn">
+    </section>
+
+    <section class="support">
+    </section>
+
+    <section class="get">
+    </section>
 </div>
 
-<!-- First section -->
-<div class="sectionOne" id="sectionOne">
-    <div class="FirstSectionTitle">
-        Het probleem
-    </div>
-</div>
-
-<script type="text/javascript" src="js/main.js">
+<script src="js/main.js">
 </script>
 </body>
 </html>
