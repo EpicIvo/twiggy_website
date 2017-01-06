@@ -20,25 +20,28 @@ function animate() {
 
 //Section One
 function sectionOneAnimation() {
-    let currentScrollY = latestKnownScrollY;
     const secondHill = document.getElementById('secondHillImage');
     const thirdHill = document.getElementById('thirdHillImage');
-    secondHill.style.bottom = '-' + (currentScrollY * 0.05) + '%';
-    thirdHill.style.bottom = '-' + (currentScrollY * 0.16) + '%';
-    if ((currentScrollY * 0.05) > 80) {
-        sectionTwoAnimationStart()
+    let currentScrollY = latestKnownScrollY;
+    secondHill.style.bottom = '-' + (currentScrollY * 0.05) + 'vh';
+    thirdHill.style.bottom = '-' + (currentScrollY * 0.16) + 'vh';
+    if ((currentScrollY * 0.05) > 60) {
+        sectionTwoAnimationStart(currentScrollY)
     }
 }
 
 //Section Two
 function sectionTwoAnimationStart() {
-    let currentScrollY = latestKnownScrollY;
     const mountain1 = document.getElementById('mountain1Image');
-    mountain1.style.bottom = (currentScrollY * 0.23) + '%';
-    if ((currentScrollY * 0.23) > 80) {
-        mountain1.style.bottom = '0%';
-        console.log('bottom: ' + mountain1.style.bottom);
-    } else if ((currentScrollY * 0.23) < 80) {
-        mountain1.style.bottom = (currentScrollY * 0.23) + '%';
+    const mountain2 = document.getElementById('mountain2Image');
+    if((-100 + ((latestKnownScrollY - 1000) * 0.1)) > 0){
+        mountain1.style.bottom = '0vh';
+    }else{
+        mountain1.style.bottom = -100 + ((latestKnownScrollY - 1000) * 0.1) + "vh";
+    }
+    if((-100 + ((latestKnownScrollY - 1000) * 0.13)) > 0){
+        mountain2.style.bottom = '0vh';
+    }else{
+        mountain2.style.bottom = -100 + ((latestKnownScrollY - 1000) * 0.13) + "vh";
     }
 }

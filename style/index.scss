@@ -16,6 +16,7 @@ body {
     height: $totalHeight;
     width: $totalWidth;
     .skyBackgroundImage{
+      z-index: -30;
       width: $totalWidth;
       position: fixed;
     }
@@ -24,20 +25,15 @@ body {
       position: fixed;
       bottom: 0;
     }
-    .secondHillImage{
+    .secondHillImage, .thirdHillImage{
       width: $totalWidth;
       position: fixed;
       bottom: 0;
     }
-    .thirdHillImage{
+    .mountain1Image, .mountain2Image{
       width: $totalWidth;
       position: fixed;
-      bottom: 0;
-    }
-    .mountain1Image{
-      width: $totalWidth;
-      position: fixed;
-      bottom: -80%;
+      bottom: -100vh;
     }
   }
 }

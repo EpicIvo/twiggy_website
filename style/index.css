@@ -9,23 +9,20 @@ body {
     height: 100vh;
     width: 100%; }
     .container .overlayAnimations .skyBackgroundImage {
+      z-index: -30;
       width: 100%;
       position: fixed; }
     .container .overlayAnimations .mainHillImage {
       width: 100%;
       position: fixed;
       bottom: 0; }
-    .container .overlayAnimations .secondHillImage {
+    .container .overlayAnimations .secondHillImage, .container .overlayAnimations .thirdHillImage {
       width: 100%;
       position: fixed;
       bottom: 0; }
-    .container .overlayAnimations .thirdHillImage {
+    .container .overlayAnimations .mountain1Image, .container .overlayAnimations .mountain2Image {
       width: 100%;
       position: fixed;
-      bottom: 0; }
-    .container .overlayAnimations .mountain1Image {
-      width: 100%;
-      position: fixed;
-      bottom: -80%; }
+      bottom: -100vh; }
 
 /*# sourceMappingURL=index.css.map */
