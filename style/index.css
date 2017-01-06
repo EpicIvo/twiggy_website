@@ -4,7 +4,7 @@ body {
   padding: 0; }
 
 .container {
-  height: 400vh; }
+  height: 1500vh; }
   .container .overlayAnimations {
     height: 100vh;
     width: 100%; }
@@ -21,6 +21,10 @@ body {
       position: fixed;
       bottom: 0; }
     .container .overlayAnimations .mountain1Image, .container .overlayAnimations .mountain2Image {
+      width: 100%;
+      position: fixed;
+      bottom: -100vh; }
+    .container .overlayAnimations .desertHill1Image, .container .overlayAnimations .desertHill2Image, .container .overlayAnimations .desertHill3Image {
       width: 100%;
       position: fixed;
       bottom: -100vh; }

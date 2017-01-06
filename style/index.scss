@@ -11,7 +11,7 @@ body {
 }
 
 .container{
-  height: 400vh;
+  height: 1500vh;
   .overlayAnimations{
     height: $totalHeight;
     width: $totalWidth;
@@ -31,6 +31,11 @@ body {
       bottom: 0;
     }
     .mountain1Image, .mountain2Image{
+      width: $totalWidth;
+      position: fixed;
+      bottom: -100vh;
+    }
+    .desertHill1Image, .desertHill2Image, .desertHill3Image{
       width: $totalWidth;
       position: fixed;
       bottom: -100vh;
