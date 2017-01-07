@@ -3,7 +3,7 @@
 $totalHeight: 100vh;
 $totalWidth: 100%;
 
-$UbuntuFont: 'Patrick Hand', cursive;
+$PatrickHandFont: 'Patrick Hand', cursive;
 
 body {
   margin: 0;
@@ -11,7 +11,7 @@ body {
 }
 
 .container{
-  height: 1500vh;
+  height: 800vh;
   .overlayAnimations{
     height: $totalHeight;
     width: $totalWidth;
@@ -25,6 +25,20 @@ body {
       width: $totalWidth;
       position: fixed;
       bottom: 0;
+    }
+    .appleSeedImage{
+      width: 1%;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .plant{
+      position: fixed;
+      top: 85%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
     }
     .secondHillImage, .thirdHillImage{
       width: $totalWidth;
@@ -56,6 +70,7 @@ body {
       text-align: center;
       font: {
         size: 8em;
+        family: $PatrickHandFont;
       }
     }
   }

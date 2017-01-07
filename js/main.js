@@ -15,20 +15,33 @@ function requestTick() {
 }
 function animate() {
     ticking = false;
+    animateSeed();
     sectionOneAnimation();
     sectionTwoAnimationStart();
     sectionThreeAnimationStart();
     sectionFourAnimation();
-    console.log('LKSY:' + latestKnownScrollY);
+}
+
+function animateSeed() {
+    const appleSeed = document.getElementById('appleSeedImage');
+    const plant = document.getElementById('plant');
+    appleSeed.style.top = 50 + latestKnownScrollY * 0.05 + '%';
+    if ((50 + latestKnownScrollY * 0.05) > 85) {
+        appleSeed.style.opacity = '0';
+        plant.style.opacity = '1';
+    } else {
+        appleSeed.style.opacity = '1';
+        plant.style.opacity = '0';
+    }
 }
 
 //Section One
 function sectionOneAnimation() {
     const secondHill = document.getElementById('secondHillImage');
     const thirdHill = document.getElementById('thirdHillImage');
-    let currentScrollY = latestKnownScrollY;
-    secondHill.style.bottom = '-' + (currentScrollY * 0.05) + 'vh';
-    thirdHill.style.bottom = '-' + (currentScrollY * 0.16) + 'vh';
+    //Go down
+    secondHill.style.bottom = '-' + ((latestKnownScrollY) * 0.05) + 'vh';
+    thirdHill.style.bottom = '-' + ((latestKnownScrollY) * 0.16) + 'vh';
 }
 
 //Section Two
@@ -41,7 +54,7 @@ function sectionTwoAnimationStart() {
     mountain1YPosition > 0 ? mountain1.style.bottom = '0vh' : mountain1.style.bottom = mountain1YPosition + "vh";
     mountain2YPosition > 0 ? mountain2.style.bottom = '0vh' : mountain2.style.bottom = mountain2YPosition + "vh";
     //Back down
-    if(latestKnownScrollY > 2400){
+    if (latestKnownScrollY > 2400) {
         mountain1.style.bottom = 0 - ((latestKnownScrollY - 2400) * 0.1) + "vh";
         mountain2.style.bottom = 0 - ((latestKnownScrollY - 2400) * 0.13) + "vh";
     }
@@ -52,19 +65,18 @@ function sectionThreeAnimationStart() {
     const desertHill1 = document.getElementById('desertHill1Image');
     const desertHill2 = document.getElementById('desertHill2Image');
     const desertHill3 = document.getElementById('desertHill3Image');
-    let desertHill1YPosition = -100 + ((latestKnownScrollY - 3300) * 0.1);
-    let desertHill2YPosition = -100 + ((latestKnownScrollY - 3300) * 0.13);
-    let desertHill3YPosition = -100 + ((latestKnownScrollY - 3300) * 0.08);
-    console.log(desertHill1.style.bottom);
+    let desertHill1YPosition = -100 + ((latestKnownScrollY - 3000) * 0.1);
+    let desertHill2YPosition = -100 + ((latestKnownScrollY - 3000) * 0.13);
+    let desertHill3YPosition = -100 + ((latestKnownScrollY - 3000) * 0.08);
     //Go up
     desertHill1YPosition > 0 ? desertHill1.style.bottom = '0vh' : desertHill1.style.bottom = desertHill1YPosition + "vh";
     desertHill2YPosition > 0 ? desertHill2.style.bottom = '0vh' : desertHill2.style.bottom = desertHill2YPosition + "vh";
     desertHill3YPosition > 0 ? desertHill3.style.bottom = '0vh' : desertHill3.style.bottom = desertHill3YPosition + "vh";
     //Back down
-    if(latestKnownScrollY > 5700) {
-        desertHill1.style.bottom = 0 - ((latestKnownScrollY - 5700) * 0.1) + "vh";
-        desertHill2.style.bottom = 0 - ((latestKnownScrollY - 5700) * 0.13) + "vh";
-        desertHill3.style.bottom = 0 - ((latestKnownScrollY - 5700) * 0.08) + "vh";
+    if (latestKnownScrollY > 5400) {
+        desertHill1.style.bottom = 0 - ((latestKnownScrollY - 5400) * 0.1) + "vh";
+        desertHill2.style.bottom = 0 - ((latestKnownScrollY - 5400) * 0.13) + "vh";
+        desertHill3.style.bottom = 0 - ((latestKnownScrollY - 5400) * 0.08) + "vh";
     }
 }
 
@@ -72,12 +84,14 @@ function sectionThreeAnimationStart() {
 function sectionFourAnimation() {
     const hill4 = document.getElementById('hill4Image');
     const ocean = document.getElementById('oceanImage');
-    let hill4YPosition = -100 + ((latestKnownScrollY - 6300) * 0.14);
-    let oceanYPosition = -100 + ((latestKnownScrollY - 6300) * 0.10);
+    let hill4YPosition = -100 + ((latestKnownScrollY - 6000) * 0.14);
+    let oceanYPosition = -100 + ((latestKnownScrollY - 6000) * 0.10);
+    //Go up
     hill4YPosition > 0 ? hill4.style.bottom = '0vh' : hill4.style.bottom = hill4YPosition + 'vh';
     oceanYPosition > 0 ? ocean.style.bottom = '0vh' : ocean.style.bottom = oceanYPosition + 'vh';
-    if (latestKnownScrollY > 7700) {
-        hill4.style.bottom = 0 - ((latestKnownScrollY - 7700) * 0.10) + 'vh';
-        ocean.style.bottom = 0 - ((latestKnownScrollY - 7700) * 0.14) + 'vh';
-    }
+    //Go down?
+    // if (latestKnownScrollY > 7400) {
+    //     hill4.style.bottom = 0 - ((latestKnownScrollY - 7400) * 0.10) + 'vh';
+    //     ocean.style.bottom = 0 - ((latestKnownScrollY - 7400) * 0.14) + 'vh';
+    // }
 }
