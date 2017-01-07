@@ -18,6 +18,7 @@ function animate() {
     sectionOneAnimation();
     sectionTwoAnimationStart();
     sectionThreeAnimationStart();
+    sectionFourAnimation();
     console.log('LKSY:' + latestKnownScrollY);
 }
 
@@ -64,5 +65,19 @@ function sectionThreeAnimationStart() {
         desertHill1.style.bottom = 0 - ((latestKnownScrollY - 5700) * 0.1) + "vh";
         desertHill2.style.bottom = 0 - ((latestKnownScrollY - 5700) * 0.13) + "vh";
         desertHill3.style.bottom = 0 - ((latestKnownScrollY - 5700) * 0.08) + "vh";
+    }
+}
+
+//Sections Four
+function sectionFourAnimation() {
+    const hill4 = document.getElementById('hill4Image');
+    const ocean = document.getElementById('oceanImage');
+    let hill4YPosition = -100 + ((latestKnownScrollY - 6300) * 0.14);
+    let oceanYPosition = -100 + ((latestKnownScrollY - 6300) * 0.10);
+    hill4YPosition > 0 ? hill4.style.bottom = '0vh' : hill4.style.bottom = hill4YPosition + 'vh';
+    oceanYPosition > 0 ? ocean.style.bottom = '0vh' : ocean.style.bottom = oceanYPosition + 'vh';
+    if (latestKnownScrollY > 7700) {
+        hill4.style.bottom = 0 - ((latestKnownScrollY - 7700) * 0.10) + 'vh';
+        ocean.style.bottom = 0 - ((latestKnownScrollY - 7700) * 0.14) + 'vh';
     }
 }

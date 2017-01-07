@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
 
 $totalHeight: 100vh;
 $totalWidth: 100%;
 
-$UbuntuFont: 'Ubuntu', sans-serif;
+$UbuntuFont: 'Patrick Hand', cursive;
 
 body {
   margin: 0;
@@ -15,6 +15,7 @@ body {
   .overlayAnimations{
     height: $totalHeight;
     width: $totalWidth;
+    position: fixed;
     .skyBackgroundImage{
       z-index: -30;
       width: $totalWidth;
@@ -39,6 +40,23 @@ body {
       width: $totalWidth;
       position: fixed;
       bottom: -100vh;
+    }
+    .hill4image, .oceanImage{
+      width: $totalWidth;
+      position: fixed;
+      bottom: -100vh;
+    }
+  }
+  .home{
+    width: $totalWidth;
+    height: $totalHeight;
+    position: fixed;
+    .homeTitle{
+      color: #ffffff;
+      text-align: center;
+      font: {
+        size: 8em;
+      }
     }
   }
 }
