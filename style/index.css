@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Patrick+Hand");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
 body {
   margin: 0;
   padding: 0; }
 
 .container {
-  height: 800vh; }
+  height: 600vh; }
   .container .overlayAnimations {
     height: 100vh;
     width: 100%;
@@ -20,7 +21,7 @@ body {
     .container .overlayAnimations .appleSeedImage {
       width: 1%;
       position: fixed;
-      top: 50%;
+      top: 55%;
       left: 50%;
       transform: translate(-50%, -50%); }
     .container .overlayAnimations .plant {
@@ -33,18 +34,26 @@ body {
       width: 100%;
       position: fixed;
       bottom: 0; }
-    .container .overlayAnimations .mountain1Image, .container .overlayAnimations .mountain2Image {
+    .container .overlayAnimations .hill4Image, .container .overlayAnimations .oceanImage, .container .overlayAnimations .desertHill1Image, .container .overlayAnimations .desertHill2Image, .container .overlayAnimations .desertHill3Image, .container .overlayAnimations .mountain1Image, .container .overlayAnimations .mountain2Image, .container .overlayAnimations .mountain3Image {
       width: 100%;
       position: fixed;
       bottom: -100vh; }
-    .container .overlayAnimations .desertHill1Image, .container .overlayAnimations .desertHill2Image, .container .overlayAnimations .desertHill3Image {
-      width: 100%;
-      position: fixed;
-      bottom: -100vh; }
-    .container .overlayAnimations .hill4image, .container .overlayAnimations .oceanImage {
-      width: 100%;
-      position: fixed;
-      bottom: -100vh; }
+    .container .overlayAnimations .mountain1Image {
+      transition-duration: 1s; }
+    .container .overlayAnimations .mountain2Image {
+      transition-duration: 1.8s; }
+    .container .overlayAnimations .mountain3Image {
+      transition-duration: 2.2s; }
+    .container .overlayAnimations .desertHill1Image {
+      transition-duration: 1s; }
+    .container .overlayAnimations .desertHill2Image {
+      transition-duration: 1.8s; }
+    .container .overlayAnimations .desertHill3Image {
+      transition-duration: 2.2s; }
+    .container .overlayAnimations .hill4Image {
+      transition-duration: 1s; }
+    .container .overlayAnimations .oceanImage {
+      transition-duration: 1.8s; }
   .container .home {
     width: 100%;
     height: 100vh;
@@ -52,7 +61,38 @@ body {
     .container .home .homeTitle {
       color: #ffffff;
       text-align: center;
+      transition-duration: 1s;
       font-size: 8em;
       font-family: "Patrick Hand", cursive; }
+    .container .home .plantText {
+      color: #CCDFF3;
+      text-align: center;
+      letter-spacing: 8px;
+      margin-top: 20vh;
+      font-size: 2em;
+      font-family: "Indie Flower", cursive; }
+  .container .play {
+    width: 100%;
+    height: 100vh;
+    position: fixed; }
+    .container .play .playTitle {
+      color: #ffffff;
+      text-align: right;
+      transition-duration: 1s;
+      margin-top: 25vh;
+      margin-right: -20%;
+      font-size: 6em;
+      font-family: "Patrick Hand", cursive; }
+    .container .play .playText {
+      color: #CCDFF3;
+      width: 35%;
+      text-align: center;
+      float: right;
+      letter-spacing: 8px;
+      transition-duration: 1.8s;
+      margin-top: 10vh;
+      margin-right: -35%;
+      font-size: 1.5em;
+      font-family: "Indie Flower", cursive; }
 
 /*# sourceMappingURL=index.css.map */

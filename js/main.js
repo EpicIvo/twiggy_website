@@ -4,9 +4,36 @@ function init() {
 }
 let ticking = false;
 let latestKnownScrollY;
+let heightPercentage;
+let scrollHeight;
+const bodyHeight = document.getElementById('body').clientHeight;
+const viewHeight = document.getElementById('overlayAnimations').clientHeight;
+
+//Elements
+//Home
+const homeTitle = document.getElementById('homeTitle');
+//Section1
+const secondHill = document.getElementById('secondHillImage');
+const thirdHill = document.getElementById('thirdHillImage');
+//Section2
+const mountain1 = document.getElementById('mountain1Image');
+const mountain2 = document.getElementById('mountain2Image');
+const mountain3 = document.getElementById('mountain3Image');
+const sectionTwoTitle = document.getElementById('playTitle');
+const sectionTwoText = document.getElementById('playText');
+//section3
+const desertHill1 = document.getElementById('desertHill1Image');
+const desertHill2 = document.getElementById('desertHill2Image');
+const desertHill3 = document.getElementById('desertHill3Image');
+//section4
+const hill4 = document.getElementById('hill4Image');
+const ocean = document.getElementById('oceanImage');
 
 function onScroll() {
     latestKnownScrollY = window.scrollY;
+    heightPercentage = ((((latestKnownScrollY + viewHeight) + bodyHeight) / scrollHeight) * 100) - 100;
+    scrollHeight = document.body.scrollHeight;
+    console.log('LKSY: ' + latestKnownScrollY + ' // Bodyheight: ' + bodyHeight + ' // Scrollpercentage: ' + heightPercentage + ' // ViewHeight: ' + viewHeight);
     requestTick();
 }
 function requestTick() {
@@ -15,17 +42,25 @@ function requestTick() {
 }
 function animate() {
     ticking = false;
-    animateSeed();
+    animateSeedToPlant();
     sectionOneAnimation();
-    sectionTwoAnimationStart();
-    sectionThreeAnimationStart();
-    sectionFourAnimation();
+    if(heightPercentage > 33.3 && heightPercentage < 58.3){
+        sectionTwoAnimation();
+    }else if (heightPercentage > 58.3 && heightPercentage < 83.3){
+        sectionThreeAnimation();
+    }else if (heightPercentage > 83.3){
+        sectionFourAnimation();
+    }else{
+        console.log('section 1');
+    }
 }
 
-function animateSeed() {
+function animateSeedToPlant() {
     const appleSeed = document.getElementById('appleSeedImage');
     const plant = document.getElementById('plant');
-    appleSeed.style.top = 50 + latestKnownScrollY * 0.05 + '%';
+    const plantText = document.getElementById('plantText');
+    appleSeed.style.top = 55 + latestKnownScrollY * 0.05 + '%';
+    plantText.style.opacity = 1 - (latestKnownScrollY * 0.0015);
     if ((50 + latestKnownScrollY * 0.05) > 85) {
         appleSeed.style.opacity = '0';
         plant.style.opacity = '1';
@@ -37,61 +72,57 @@ function animateSeed() {
 
 //Section One
 function sectionOneAnimation() {
-    const secondHill = document.getElementById('secondHillImage');
-    const thirdHill = document.getElementById('thirdHillImage');
+    homeTitle.style.marginTop = '0%';
+    mountain1.style.bottom = '-100vh';
+    mountain2.style.bottom = '-100vh';
+    mountain3.style.bottom = '-100vh';
+    //Text
+    sectionTwoTitle.style.marginRight = '-20%';
+    sectionTwoText.style.marginRight = '-35%';
     //Go down
     secondHill.style.bottom = '-' + ((latestKnownScrollY) * 0.05) + 'vh';
     thirdHill.style.bottom = '-' + ((latestKnownScrollY) * 0.16) + 'vh';
 }
 
-//Section Two
-function sectionTwoAnimationStart() {
-    const mountain1 = document.getElementById('mountain1Image');
-    const mountain2 = document.getElementById('mountain2Image');
-    let mountain1YPosition = -100 + ((latestKnownScrollY - 1000) * 0.1);
-    let mountain2YPosition = -100 + ((latestKnownScrollY - 1000) * 0.13);
-    //Go up
-    mountain1YPosition > 0 ? mountain1.style.bottom = '0vh' : mountain1.style.bottom = mountain1YPosition + "vh";
-    mountain2YPosition > 0 ? mountain2.style.bottom = '0vh' : mountain2.style.bottom = mountain2YPosition + "vh";
-    //Back down
-    if (latestKnownScrollY > 2400) {
-        mountain1.style.bottom = 0 - ((latestKnownScrollY - 2400) * 0.1) + "vh";
-        mountain2.style.bottom = 0 - ((latestKnownScrollY - 2400) * 0.13) + "vh";
-    }
+function sectionTwoAnimation() {
+    homeTitle.style.marginTop = '-20%';
+    mountain1.style.bottom = '0vh';
+    mountain2.style.bottom = '0vh';
+    mountain3.style.bottom = '0vh';
+    desertHill1.style.bottom = '-100vh';
+    desertHill2.style.bottom = '-100vh';
+    desertHill3.style.bottom = '-100vh';
+    desertHill1.style.transitionDuration = '2.2s';
+    desertHill3.style.transitionDuration = '1s';
+    hill4.style.bottom = '-100vh';
+    ocean.style.bottom = '-100vh';
+    //Text
+    sectionTwoTitle.style.marginRight = '40%';
+    sectionTwoText.style.marginRight = '40%';
 }
 
-//Section Three
-function sectionThreeAnimationStart() {
-    const desertHill1 = document.getElementById('desertHill1Image');
-    const desertHill2 = document.getElementById('desertHill2Image');
-    const desertHill3 = document.getElementById('desertHill3Image');
-    let desertHill1YPosition = -100 + ((latestKnownScrollY - 3000) * 0.1);
-    let desertHill2YPosition = -100 + ((latestKnownScrollY - 3000) * 0.13);
-    let desertHill3YPosition = -100 + ((latestKnownScrollY - 3000) * 0.08);
-    //Go up
-    desertHill1YPosition > 0 ? desertHill1.style.bottom = '0vh' : desertHill1.style.bottom = desertHill1YPosition + "vh";
-    desertHill2YPosition > 0 ? desertHill2.style.bottom = '0vh' : desertHill2.style.bottom = desertHill2YPosition + "vh";
-    desertHill3YPosition > 0 ? desertHill3.style.bottom = '0vh' : desertHill3.style.bottom = desertHill3YPosition + "vh";
-    //Back down
-    if (latestKnownScrollY > 5400) {
-        desertHill1.style.bottom = 0 - ((latestKnownScrollY - 5400) * 0.1) + "vh";
-        desertHill2.style.bottom = 0 - ((latestKnownScrollY - 5400) * 0.13) + "vh";
-        desertHill3.style.bottom = 0 - ((latestKnownScrollY - 5400) * 0.08) + "vh";
-    }
+function sectionThreeAnimation() {
+    mountain1.style.bottom = '-100vh';
+    mountain2.style.bottom = '-100vh';
+    mountain3.style.bottom = '-100vh';
+    desertHill1.style.bottom = '0vh';
+    desertHill2.style.bottom = '0vh';
+    desertHill3.style.bottom = '0vh';
+    desertHill1.style.transitionDuration = '1s';
+    desertHill3.style.transitionDuration = '2.2s';
+    hill4.style.bottom = '-100vh';
+    ocean.style.bottom = '-100vh';
+    //Text
+    sectionTwoTitle.style.marginRight = '-20%';
+    sectionTwoText.style.marginRight = '-35%';
 }
 
-//Sections Four
 function sectionFourAnimation() {
-    const hill4 = document.getElementById('hill4Image');
-    const ocean = document.getElementById('oceanImage');
-    let hill4YPosition = -100 + ((latestKnownScrollY - 6000) * 0.14);
-    let oceanYPosition = -100 + ((latestKnownScrollY - 6000) * 0.10);
-    //Go up
-    hill4YPosition > 0 ? hill4.style.bottom = '0vh' : hill4.style.bottom = hill4YPosition + 'vh';
-    oceanYPosition > 0 ? ocean.style.bottom = '0vh' : ocean.style.bottom = oceanYPosition + 'vh';
-    //Go down?
-    // if (latestKnownScrollY > 7400) {
-    //     hill4.style.bottom = 0 - ((latestKnownScrollY - 7400) * 0.10) + 'vh';
-    //     ocean.style.bottom = 0 - ((latestKnownScrollY - 7400) * 0.14) + 'vh';
-    // }
+    desertHill1.style.bottom = '-100vh';
+    desertHill2.style.bottom = '-100vh';
+    desertHill3.style.bottom = '-100vh';
+    desertHill1.style.transitionDuration = '2.2s';
+    desertHill3.style.transitionDuration = '1s';
+    hill4.style.bottom = '0vh';
+    ocean.style.bottom = '0vh';
 }

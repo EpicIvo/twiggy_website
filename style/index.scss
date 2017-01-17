@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
 $totalHeight: 100vh;
 $totalWidth: 100%;
 
-$PatrickHandFont: 'Patrick Hand', cursive;
+$MainFont: 'Patrick Hand', cursive;
+$SecondFont: 'Indie Flower', cursive;
 
 body {
   margin: 0;
@@ -11,7 +13,7 @@ body {
 }
 
 .container{
-  height: 800vh;
+  height: 600vh;
   .overlayAnimations{
     height: $totalHeight;
     width: $totalWidth;
@@ -29,7 +31,7 @@ body {
     .appleSeedImage{
       width: 1%;
       position: fixed;
-      top: 50%;
+      top: 55%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
@@ -45,20 +47,37 @@ body {
       position: fixed;
       bottom: 0;
     }
-    .mountain1Image, .mountain2Image{
+    .hill4Image, .oceanImage, .desertHill1Image, .desertHill2Image, .desertHill3Image, .mountain1Image, .mountain2Image, .mountain3Image{
       width: $totalWidth;
       position: fixed;
       bottom: -100vh;
     }
-    .desertHill1Image, .desertHill2Image, .desertHill3Image{
-      width: $totalWidth;
-      position: fixed;
-      bottom: -100vh;
+    //Mountain animations
+    .mountain1Image{
+      transition-duration: 1s;
     }
-    .hill4image, .oceanImage{
-      width: $totalWidth;
-      position: fixed;
-      bottom: -100vh;
+    .mountain2Image{
+      transition-duration: 1.8s;
+    }
+    .mountain3Image{
+      transition-duration: 2.2s;
+    }
+    //Desert animations
+    .desertHill1Image{
+      transition-duration: 1s;
+    }
+    .desertHill2Image{
+      transition-duration: 1.8s;
+    }
+    .desertHill3Image{
+      transition-duration: 2.2s;
+    }
+    //Last stage animations
+    .hill4Image{
+      transition-duration: 1s;
+    }
+    .oceanImage{
+      transition-duration: 1.8s;
     }
   }
   .home{
@@ -68,9 +87,56 @@ body {
     .homeTitle{
       color: #ffffff;
       text-align: center;
+      transition-duration: 1s;
       font: {
         size: 8em;
-        family: $PatrickHandFont;
+        family: $MainFont;
+      }
+    }
+    .plantText{
+      color: #CCDFF3;
+      text-align: center;
+      letter-spacing: 8px;
+      margin: {
+        top: 20vh;
+      }
+      font: {
+        size: 2em;
+        family: $SecondFont;
+      }
+    }
+  }
+  .play{
+    width: $totalWidth;
+    height: $totalHeight;
+    position: fixed;
+    .playTitle{
+      color: #ffffff;
+      text-align: right;
+      transition-duration: 1s;
+      margin: {
+        top: 25vh;
+        right: -20%;
+      }
+      font: {
+        size: 6em;
+        family: $MainFont;
+      }
+    }
+    .playText{
+      color: #CCDFF3;
+      width: 35%;
+      text-align: center;
+      float: right;
+      letter-spacing: 8px;
+      transition-duration: 1.8s;
+      margin: {
+        top: 10vh;
+        right: -35%;
+      }
+      font: {
+        size: 1.5em;
+        family: $SecondFont;
       }
     }
   }

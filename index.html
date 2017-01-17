@@ -7,14 +7,14 @@
     <script type="text/javascript" src="scrollmagic/uncompressed/ScrollMagic.js"></script>
     <script type="text/javascript" src="scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
 </head>
-<body>
+<body id="body">
 <div class="container">
-    <section class="overlayAnimations">
+    <section class="overlayAnimations" id="overlayAnimations">
         <!--MAIN BG-->
         <img src="media/main/skyBackground.png" class="skyBackgroundImage">
         <!--SECTION FOUR ANIMATION-->
         <img src="media/section4/ocean.png" class="oceanImage" id="oceanImage">
-        <img src="media/section4/hill4.png" class="hill4image" id="hill4Image">
+        <img src="media/section4/hill4.png" class="hill4Image" id="hill4Image">
         <!--SECTION THREE ANIMATION-->
         <img src="media/section3/desertHill3.png" class="desertHill3Image" id="desertHill3Image">
         <img src="media/section3/desertHill2.png" class="desertHill2Image" id="desertHill2Image">
@@ -22,22 +22,32 @@
         <!--SECTION TWO ANIMATION-->
         <img src="media/section2/mountain1.png" class="mountain1Image" id="mountain1Image">
         <img src="media/section2/mountain2.png" class="mountain2Image" id="mountain2Image">
+        <img src="media/section2/mountain3.png" class="mountain3Image" id="mountain3Image">
         <!--SECTION ONE ANIMATION-->
         <img src="media/section1/secondHill.png" class="secondHillImage" id="secondHillImage">
         <img src="media/section1/thirdHill.png" class="thirdHillImage" id="thirdHillImage">
         <!--MAIN FRONT-->
         <img src="media/main/mainHill.png" class="mainHillImage">
         <img src="media/main/apple_seed.png" class="appleSeedImage" id="appleSeedImage">
-        <img src="media/main/stage1.png" class="plant" id="plant">
+        <img src="media/main/PlantsMotionless/stage1.png" class="plant" id="plant">
     </section>
 
     <section class="home">
-        <div class="homeTitle">
+        <div class="homeTitle" id="homeTitle">
             Twiggy
+        </div>
+        <div class="plantText" id="plantText">
+            Plant your seed!
         </div>
     </section>
 
     <section class="play">
+        <div class="playTitle" id="playTitle">
+            Play
+        </div>
+        <div class="playText" id="playText">
+            Plant jouw zaadje en zorg ervoor dat hij uitgroeit tot een grote boom. <br>
+        </div>
     </section>
 
     <section class="earn">
