@@ -105,7 +105,7 @@ function sectionTwoAnimation() {
     ocean.style.bottom = '-100vh';
     //Text
     sectionTwoTitle.style.marginLeft = '0%';
-    sectionTwoText.style.marginLeft = '30%';
+    sectionTwoText.style.marginLeft = '0%';
 }
 
 function sectionThreeAnimation() {
