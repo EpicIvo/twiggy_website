@@ -12,6 +12,9 @@ const viewHeight = document.getElementById('overlayAnimations').clientHeight;
 //Elements
 //Home
 const homeTitle = document.getElementById('homeTitle');
+const appleSeed = document.getElementById('appleSeedImage');
+const plant = document.getElementById('plant');
+const plantText = document.getElementById('plantText');
 //Section1
 const secondHill = document.getElementById('secondHillImage');
 const thirdHill = document.getElementById('thirdHillImage');
@@ -42,9 +45,11 @@ function requestTick() {
 }
 function animate() {
     ticking = false;
-    animateSeedToPlant();
-    sectionOneAnimation();
-    if(heightPercentage > 33.3 && heightPercentage < 58.3){
+    if (heightPercentage < 33.3){
+        animateSeedToPlant();
+        sectionOneAnimation();
+    }
+    else if(heightPercentage > 33.3 && heightPercentage < 58.3){
         sectionTwoAnimation();
     }else if (heightPercentage > 58.3 && heightPercentage < 83.3){
         sectionThreeAnimation();
@@ -56,9 +61,6 @@ function animate() {
 }
 
 function animateSeedToPlant() {
-    const appleSeed = document.getElementById('appleSeedImage');
-    const plant = document.getElementById('plant');
-    const plantText = document.getElementById('plantText');
     appleSeed.style.top = 55 + latestKnownScrollY * 0.05 + '%';
     plantText.style.opacity = 1 - (latestKnownScrollY * 0.0015);
     if ((50 + latestKnownScrollY * 0.05) > 85) {
@@ -77,14 +79,19 @@ function sectionOneAnimation() {
     mountain2.style.bottom = '-100vh';
     mountain3.style.bottom = '-100vh';
     //Text
-    sectionTwoTitle.style.marginRight = '-20%';
-    sectionTwoText.style.marginRight = '-35%';
+    sectionTwoTitle.style.marginLeft = '200%';
+    sectionTwoText.style.marginLeft = '200%';
     //Go down
     secondHill.style.bottom = '-' + ((latestKnownScrollY) * 0.05) + 'vh';
     thirdHill.style.bottom = '-' + ((latestKnownScrollY) * 0.16) + 'vh';
 }
 
 function sectionTwoAnimation() {
+    //Make sure previous stage is really gone
+    plantText.style.opacity = '0';
+    appleSeed.style.opacity = '0';
+
+    plant.style.opacity = '1';
     homeTitle.style.marginTop = '-20%';
     mountain1.style.bottom = '0vh';
     mountain2.style.bottom = '0vh';
@@ -97,8 +104,8 @@ function sectionTwoAnimation() {
     hill4.style.bottom = '-100vh';
     ocean.style.bottom = '-100vh';
     //Text
-    sectionTwoTitle.style.marginRight = '40%';
-    sectionTwoText.style.marginRight = '40%';
+    sectionTwoTitle.style.marginLeft = '0%';
+    sectionTwoText.style.marginLeft = '30%';
 }
 
 function sectionThreeAnimation() {
@@ -113,8 +120,8 @@ function sectionThreeAnimation() {
     hill4.style.bottom = '-100vh';
     ocean.style.bottom = '-100vh';
     //Text
-    sectionTwoTitle.style.marginRight = '-20%';
-    sectionTwoText.style.marginRight = '-35%';
+    sectionTwoTitle.style.marginLeft = '-200%';
+    sectionTwoText.style.marginLeft = '-200%';
 }
 
 function sectionFourAnimation() {
