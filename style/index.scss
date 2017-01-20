@@ -111,32 +111,38 @@ body {
     height: $totalHeight;
     position: fixed;
     .playTitle{
+      position: fixed;
       color: #ffffff;
-      text-align: right;
+      text-align: center;
       transition-duration: 1s;
+      width: $totalWidth;
       margin: {
-        top: 25vh;
-        right: -20%;
+        left: 200%;
       }
       font: {
         size: 6em;
         family: $MainFont;
       }
+      .playTitleContent {
+        width: 35%;
+      }
     }
     .playText{
+      position: fixed;
       color: #CCDFF3;
-      width: 35%;
       text-align: center;
-      float: right;
-      letter-spacing: 8px;
       transition-duration: 1.8s;
+      width: $totalWidth;
       margin: {
-        top: 10vh;
-        right: -35%;
+        top: 20vh;
+        left: 200%;
       }
       font: {
         size: 1.5em;
         family: $SecondFont;
+      }
+      .playTextContent{
+        width: 35%;
       }
     }
   }
