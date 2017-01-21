@@ -24,13 +24,23 @@ const mountain2 = document.getElementById('mountain2Image');
 const mountain3 = document.getElementById('mountain3Image');
 const sectionTwoTitle = document.getElementById('playTitle');
 const sectionTwoText = document.getElementById('playText');
+const sectionTwoTitleContent = document.getElementById('playTitleContent');
+const sectionTwoTextContent = document.getElementById('playTextContent');
 //section3
 const desertHill1 = document.getElementById('desertHill1Image');
 const desertHill2 = document.getElementById('desertHill2Image');
 const desertHill3 = document.getElementById('desertHill3Image');
+const sectionThreeTitle = document.getElementById('earnTitle');
+const sectionThreeText = document.getElementById('earnText');
+const sectionThreeTitleContent = document.getElementById('earnTitleContent');
+const sectionThreeTextContent = document.getElementById('earnTextContent');
 //section4
 const hill4 = document.getElementById('hill4Image');
 const ocean = document.getElementById('oceanImage');
+const sectionFourTitle = document.getElementById('plantSectionTitle');
+const sectionFourText = document.getElementById('plantSectionText');
+const sectionFourTitleContent = document.getElementById('plantSectionTitleContent');
+const sectionFourTextContent = document.getElementById('plantSectionTextContent');
 
 function onScroll() {
     latestKnownScrollY = window.scrollY;
@@ -78,7 +88,7 @@ function sectionOneAnimation() {
     mountain1.style.bottom = '-100vh';
     mountain2.style.bottom = '-100vh';
     mountain3.style.bottom = '-100vh';
-    //Text
+    //Text2
     sectionTwoTitle.style.marginLeft = '200%';
     sectionTwoText.style.marginLeft = '200%';
     //Go down
@@ -92,6 +102,8 @@ function sectionTwoAnimation() {
     appleSeed.style.opacity = '0';
 
     plant.style.opacity = '1';
+    plant.src = 'media/main/gifs/1.gif';
+    plant.style.top = '85%';
     homeTitle.style.marginTop = '-20%';
     mountain1.style.bottom = '0vh';
     mountain2.style.bottom = '0vh';
@@ -103,12 +115,21 @@ function sectionTwoAnimation() {
     desertHill3.style.transitionDuration = '1s';
     hill4.style.bottom = '-100vh';
     ocean.style.bottom = '-100vh';
-    //Text
+    //Text2
     sectionTwoTitle.style.marginLeft = '0%';
     sectionTwoText.style.marginLeft = '0%';
+    sectionTwoTitleContent.style.marginLeft = 'auto';
+    sectionTwoTextContent.style.marginLeft = 'auto';
+    sectionTwoTitleContent.style.marginRight = 'auto';
+    sectionTwoTextContent.style.marginRight = 'auto';
+    //Text3
+    sectionThreeTitle.style.marginLeft = '200%';
+    sectionThreeText.style.marginLeft = '200%';
 }
 
 function sectionThreeAnimation() {
+    plant.src = 'media/main/gifs/4.gif';
+    plant.style.top = '75%';
     mountain1.style.bottom = '-100vh';
     mountain2.style.bottom = '-100vh';
     mountain3.style.bottom = '-100vh';
@@ -119,12 +140,24 @@ function sectionThreeAnimation() {
     desertHill3.style.transitionDuration = '2.2s';
     hill4.style.bottom = '-100vh';
     ocean.style.bottom = '-100vh';
-    //Text
+    //Text2
     sectionTwoTitle.style.marginLeft = '-200%';
     sectionTwoText.style.marginLeft = '-200%';
+    //Text3
+    sectionThreeTitle.style.marginLeft = '0%';
+    sectionThreeText.style.marginLeft = '0%';
+    sectionThreeTitleContent.style.marginLeft = 'auto';
+    sectionThreeTextContent.style.marginLeft = 'auto';
+    sectionThreeTitleContent.style.marginRight = '5%';
+    sectionThreeTextContent.style.marginRight = '5%';
+    //Text4
+    sectionFourTitle.style.marginLeft = '200%';
+    sectionFourText.style.marginLeft = '200%';
 }
 
 function sectionFourAnimation() {
+    plant.src = 'media/main/gifs/smaller7.gif';
+    plant.style.top = '50%';
     desertHill1.style.bottom = '-100vh';
     desertHill2.style.bottom = '-100vh';
     desertHill3.style.bottom = '-100vh';
@@ -132,4 +165,14 @@ function sectionFourAnimation() {
     desertHill3.style.transitionDuration = '1s';
     hill4.style.bottom = '0vh';
     ocean.style.bottom = '0vh';
+    //Text3
+    sectionThreeTitle.style.marginLeft = '-200%';
+    sectionThreeText.style.marginLeft = '-200%';
+    //Text4
+    sectionFourTitle.style.marginLeft = '0%';
+    sectionFourText.style.marginLeft = '0%';
+    sectionFourTitleContent.style.marginLeft = 'auto';
+    sectionFourTextContent.style.marginLeft = 'auto';
+    sectionFourTitleContent.style.marginRight = '95%';
+    sectionFourTextContent.style.marginRight = '95%';
 }
