@@ -12,6 +12,7 @@ $ThirdFont: 'Nunito', sans-serif;
 body {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .container {
@@ -153,10 +154,9 @@ body {
         family: $ThirdFont;
       }
       .playTextContent {
-        border: 13px solid;
-        border-image: linear-gradient(to bottom right, #b1ddf1 0%, #76b0a0 100%);
-        border-image-slice: 1;
-        padding: 1.5%;
+        border-top: 7px solid #b1ddf1;
+        background-color: rgba(177, 221, 241, 0.3);
+        padding: .5%;
         width: 36%;
       }
       .playTextContent::before {
@@ -176,7 +176,7 @@ body {
       transition-duration: 1s;
       width: $totalWidth;
       margin: {
-        top: 20vh;
+        top: 0;
         left: 200%;
       }
       font: {
@@ -189,12 +189,12 @@ body {
     }
     .earnText {
       position: fixed;
-      color: #2E2E2E;
+      color: #b1ddf1;
       text-align: center;
       transition-duration: 1.8s;
       width: $totalWidth;
       margin: {
-        top: 45vh;
+        top: 20vh;
         left: 200%;
       }
       font: {
@@ -202,7 +202,10 @@ body {
         family: $ThirdFont;
       }
       .earnTextContent {
-        width: 35%;
+        border-top: 7px solid #b1ddf1;
+        background-color: rgba(177, 221, 241, 0.3);
+        padding: .5%;
+        width: 36%;
       }
     }
   }
@@ -231,7 +234,7 @@ body {
     }
     .plantSectionText {
       position: fixed;
-      color: #CCDFF3;
+      color: #b1ddf1;
       text-align: center;
       transition-duration: 1.8s;
       width: $totalWidth;
@@ -244,7 +247,10 @@ body {
         family: $ThirdFont;
       }
       .plantSectionTextContent {
-        width: 35%;
+        border-top: 7px solid #b1ddf1;
+        background-color: rgba(177, 221, 241, 0.3);
+        padding: .5%;
+        width: 25%;
       }
     }
   }

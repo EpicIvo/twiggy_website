@@ -136,9 +136,9 @@ function sectionThreeAnimation() {
     mountain1.style.bottom = '-100vh';
     mountain2.style.bottom = '-100vh';
     mountain3.style.bottom = '-100vh';
-    desertHill1.style.bottom = '0vh';
-    desertHill2.style.bottom = '0vh';
-    desertHill3.style.bottom = '0vh';
+    desertHill1.style.bottom = '-10vh';
+    desertHill2.style.bottom = '-20vh';
+    desertHill3.style.bottom = '-30vh';
     desertHill1.style.transitionDuration = '1s';
     desertHill3.style.transitionDuration = '2.2s';
     hill4.style.bottom = '-100vh';
@@ -173,8 +173,8 @@ function sectionFourAnimation() {
     sectionThreeTitle.style.marginLeft = '-200%';
     sectionThreeText.style.marginLeft = '-200%';
     //Text4
-    sectionFourTitle.style.marginLeft = '0%';
-    sectionFourText.style.marginLeft = '0%';
+    sectionFourTitle.style.marginLeft = '3%';
+    sectionFourText.style.marginLeft = '5%';
     sectionFourTitleContent.style.marginLeft = 'auto';
     sectionFourTextContent.style.marginLeft = 'auto';
     sectionFourTitleContent.style.marginRight = '95%';

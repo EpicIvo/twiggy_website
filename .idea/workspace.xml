@@ -4,17 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/js/main.js" description="    if(" line="94" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaff0119-e34b-4743-b09d-4dd85c4c5bf8" name="Default" comment="Added various front-end enhancements">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/media/main/mainDesertHill.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/media/main/Asset 2-8.png" afterPath="$PROJECT_DIR$/media/main/favico.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/main/mainHill.png" afterPath="$PROJECT_DIR$/media/main/mainHill.png" />
+    <list default="true" id="aaff0119-e34b-4743-b09d-4dd85c4c5bf8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/media/main/skyBackground.png" afterPath="$PROJECT_DIR$/media/main/skyBackground.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/index.css" afterPath="$PROJECT_DIR$/style/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/index.css.map" afterPath="$PROJECT_DIR$/style/index.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/index.scss" afterPath="$PROJECT_DIR$/style/index.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,21 +38,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+            <state relative-caret-position="315">
+              <caret line="191" column="21" lean-forward="false" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="133" column="40" lean-forward="true" selection-start-line="133" selection-start-column="40" selection-end-line="133" selection-end-column="40" />
+            <state relative-caret-position="595">
+              <caret line="154" column="51" lean-forward="false" selection-start-line="154" selection-start-column="51" selection-end-line="154" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -84,16 +77,16 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/style" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/style/index.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style/index.scss" />
+        <option value="$PROJECT_DIR$/js/main.js" />
       </list>
     </option>
   </component>
@@ -373,7 +366,7 @@
       <workItem from="1484999861172" duration="4857000" />
       <workItem from="1485045345339" duration="48000" />
       <workItem from="1485347683532" duration="33000" />
-      <workItem from="1485347752293" duration="5557000" />
+      <workItem from="1485347752293" duration="7905000" />
     </task>
     <task id="LOCAL-00001" summary="Second stage text animation fixed">
       <created>1484925912204</created>
@@ -393,7 +386,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97466000" />
+    <option name="totallyTimeSpent" value="99814000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -439,7 +432,8 @@
     <MESSAGE value="Added images" />
     <MESSAGE value="Added final content and animations" />
     <MESSAGE value="Added various front-end enhancements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added various front-end enhancements" />
+    <MESSAGE value="Added various front-end enhancements (oddly specific)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added various front-end enhancements (oddly specific)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -830,18 +824,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/style/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="133" column="40" lean-forward="true" selection-start-line="133" selection-start-column="40" selection-end-line="133" selection-end-column="40" />
+        <state relative-caret-position="315">
+          <caret line="191" column="21" lean-forward="false" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/index.scss">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="48" column="22" lean-forward="true" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        <state relative-caret-position="595">
+          <caret line="154" column="51" lean-forward="false" selection-start-line="154" selection-start-column="51" selection-end-line="154" selection-end-column="51" />
           <folding />
         </state>
       </provider>
