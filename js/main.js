@@ -173,7 +173,7 @@ function sectionFourAnimation() {
     sectionThreeTitle.style.marginLeft = '-200%';
     sectionThreeText.style.marginLeft = '-200%';
     //Text4
-    sectionFourTitle.style.marginLeft = '3%';
+    sectionFourTitle.style.marginLeft = '0%';
     sectionFourText.style.marginLeft = '5%';
     sectionFourTitleContent.style.marginLeft = 'auto';
     sectionFourTextContent.style.marginLeft = 'auto';
