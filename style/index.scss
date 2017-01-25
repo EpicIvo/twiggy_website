@@ -14,79 +14,87 @@ body {
   padding: 0;
 }
 
-.container{
+.container {
   height: 600vh;
-  .overlayAnimations{
+  .overlayAnimations {
     height: $totalHeight;
     width: $totalWidth;
     position: fixed;
-    .skyBackgroundImage{
+    .skyBackgroundImage {
       z-index: -30;
       width: $totalWidth;
       position: fixed;
     }
-    .mainHillImage{
+    .mainHillImage {
       width: $totalWidth;
       position: fixed;
       bottom: 0;
+      transition-duration: 1s;
+      opacity: 1;
     }
-    .appleSeedImage{
+    .mainDesertHillImage {
+      width: $totalWidth;
+      position: fixed;
+      bottom: 0;
+      opacity: 1;
+    }
+    .appleSeedImage {
       width: 1%;
       position: fixed;
-      top: 55%;
+      top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
-    .plant{
+    .plant {
       position: fixed;
       top: 85%;
       left: 50%;
       transform: translate(-50%, -50%);
       opacity: 0;
     }
-    .secondHillImage, .thirdHillImage{
+    .secondHillImage, .thirdHillImage {
       width: $totalWidth;
       position: fixed;
       bottom: 0;
     }
-    .hill4Image, .oceanImage, .desertHill1Image, .desertHill2Image, .desertHill3Image, .mountain1Image, .mountain2Image, .mountain3Image{
+    .hill4Image, .oceanImage, .desertHill1Image, .desertHill2Image, .desertHill3Image, .mountain1Image, .mountain2Image, .mountain3Image {
       width: $totalWidth;
       position: fixed;
       bottom: -100vh;
     }
     //Mountain animations
-    .mountain1Image{
+    .mountain1Image {
       transition-duration: 1s;
     }
-    .mountain2Image{
+    .mountain2Image {
       transition-duration: 1.8s;
     }
-    .mountain3Image{
+    .mountain3Image {
       transition-duration: 2.2s;
     }
     //Desert animations
-    .desertHill1Image{
+    .desertHill1Image {
       transition-duration: 1s;
     }
-    .desertHill2Image{
+    .desertHill2Image {
       transition-duration: 1.8s;
     }
-    .desertHill3Image{
+    .desertHill3Image {
       transition-duration: 2.2s;
     }
     //Last stage animations
-    .hill4Image{
+    .hill4Image {
       transition-duration: 1s;
     }
-    .oceanImage{
+    .oceanImage {
       transition-duration: 1.8s;
     }
   }
-  .home{
+  .home {
     width: $totalWidth;
     height: $totalHeight;
     position: fixed;
-    .homeTitle{
+    .homeTitle {
       color: #ffffff;
       text-align: center;
       transition-duration: 1s;
@@ -95,8 +103,8 @@ body {
         family: $MainFont;
       }
     }
-    .plantText{
-      color: #CCDFF3;
+    .plantText {
+      color: #b1ddf1;
       text-align: center;
       letter-spacing: 8px;
       margin: {
@@ -109,11 +117,11 @@ body {
     }
   }
   //Play section
-  .play{
+  .play {
     width: $totalWidth;
     height: $totalHeight;
     position: fixed;
-    .playTitle{
+    .playTitle {
       position: fixed;
       color: #ffffff;
       text-align: center;
@@ -130,9 +138,9 @@ body {
         width: 35%;
       }
     }
-    .playText{
+    .playText {
       position: fixed;
-      color: #CCDFF3;
+      color: #b1ddf1;
       text-align: center;
       transition-duration: 1.8s;
       width: $totalWidth;
@@ -144,17 +152,24 @@ body {
         size: 1.5em;
         family: $ThirdFont;
       }
-      .playTextContent{
-        width: 35%;
+      .playTextContent {
+        border: 13px solid;
+        border-image: linear-gradient(to bottom right, #b1ddf1 0%, #76b0a0 100%);
+        border-image-slice: 1;
+        padding: 1.5%;
+        width: 36%;
+      }
+      .playTextContent::before {
+        border-radius: 27px;
       }
     }
   }
   //Earn section
-  .earn{
+  .earn {
     width: $totalWidth;
     height: $totalHeight;
     position: fixed;
-    .earnTitle{
+    .earnTitle {
       position: fixed;
       color: #ffffff;
       text-align: center;
@@ -172,7 +187,7 @@ body {
         width: 35%;
       }
     }
-    .earnText{
+    .earnText {
       position: fixed;
       color: #2E2E2E;
       text-align: center;
@@ -186,17 +201,17 @@ body {
         size: 1.5em;
         family: $ThirdFont;
       }
-      .earnTextContent{
+      .earnTextContent {
         width: 35%;
       }
     }
   }
   //plant Section
-  .plantSection{
+  .plantSection {
     width: $totalWidth;
     height: $totalHeight;
     position: fixed;
-    .plantSectionTitle{
+    .plantSectionTitle {
       position: fixed;
       color: #ffffff;
       text-align: center;
@@ -214,7 +229,7 @@ body {
         width: 35%;
       }
     }
-    .plantSectionText{
+    .plantSectionText {
       position: fixed;
       color: #CCDFF3;
       text-align: center;
@@ -228,7 +243,7 @@ body {
         size: 1.5em;
         family: $ThirdFont;
       }
-      .plantSectionTextContent{
+      .plantSectionTextContent {
         width: 35%;
       }
     }

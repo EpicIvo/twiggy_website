@@ -18,11 +18,18 @@ body {
     .container .overlayAnimations .mainHillImage {
       width: 100%;
       position: fixed;
-      bottom: 0; }
+      bottom: 0;
+      transition-duration: 1s;
+      opacity: 1; }
+    .container .overlayAnimations .mainDesertHillImage {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      opacity: 1; }
     .container .overlayAnimations .appleSeedImage {
       width: 1%;
       position: fixed;
-      top: 55%;
+      top: 60%;
       left: 50%;
       transform: translate(-50%, -50%); }
     .container .overlayAnimations .plant {
@@ -66,7 +73,7 @@ body {
       font-size: 8em;
       font-family: "Patrick Hand", cursive; }
     .container .home .plantText {
-      color: #CCDFF3;
+      color: #b1ddf1;
       text-align: center;
       letter-spacing: 8px;
       margin-top: 20vh;
@@ -89,7 +96,7 @@ body {
         width: 35%; }
     .container .play .playText {
       position: fixed;
-      color: #CCDFF3;
+      color: #b1ddf1;
       text-align: center;
       transition-duration: 1.8s;
       width: 100%;
@@ -98,7 +105,13 @@ body {
       font-size: 1.5em;
       font-family: "Nunito", sans-serif; }
       .container .play .playText .playTextContent {
-        width: 35%; }
+        border: 13px solid;
+        border-image: linear-gradient(to bottom right, #b1ddf1 0%, #76b0a0 100%);
+        border-image-slice: 1;
+        padding: 1.5%;
+        width: 36%; }
+      .container .play .playText .playTextContent::before {
+        border-radius: 27px; }
   .container .earn {
     width: 100%;
     height: 100vh;
