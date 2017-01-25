@@ -11,6 +11,7 @@ const viewHeight = document.getElementById('overlayAnimations').clientHeight;
 
 //Elements
 //Home
+const mainHill = document.getElementById('mainHillImage');
 const homeTitle = document.getElementById('homeTitle');
 const appleSeed = document.getElementById('appleSeedImage');
 const plant = document.getElementById('plant');
@@ -71,7 +72,7 @@ function animate() {
 }
 
 function animateSeedToPlant() {
-    appleSeed.style.top = 55 + latestKnownScrollY * 0.05 + '%';
+    appleSeed.style.top = 60 + latestKnownScrollY * 0.05 + '%';
     plantText.style.opacity = 1 - (latestKnownScrollY * 0.0015);
     if ((50 + latestKnownScrollY * 0.05) > 85) {
         appleSeed.style.opacity = '0';
@@ -101,6 +102,7 @@ function sectionTwoAnimation() {
     plantText.style.opacity = '0';
     appleSeed.style.opacity = '0';
 
+    mainHill.style.opacity = '1';
     plant.style.opacity = '1';
     plant.src = 'media/main/gifs/1.gif';
     plant.style.top = '85%';
@@ -128,6 +130,7 @@ function sectionTwoAnimation() {
 }
 
 function sectionThreeAnimation() {
+    mainHill.style.opacity = '0';
     plant.src = 'media/main/gifs/4.gif';
     plant.style.top = '75%';
     mountain1.style.bottom = '-100vh';
@@ -156,6 +159,7 @@ function sectionThreeAnimation() {
 }
 
 function sectionFourAnimation() {
+    mainHill.style.opacity = '1';
     plant.src = 'media/main/gifs/smaller7.gif';
     plant.style.top = '50%';
     desertHill1.style.bottom = '-100vh';
