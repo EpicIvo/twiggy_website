@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/js/main.js" description="    if(" line="94" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaff0119-e34b-4743-b09d-4dd85c4c5bf8" name="Default" comment="">
+    <list default="true" id="aaff0119-e34b-4743-b09d-4dd85c4c5bf8" name="Default" comment="Added game links">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
@@ -40,8 +40,8 @@
       <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="255">
+              <caret line="226" column="14" lean-forward="false" selection-start-line="226" selection-start-column="14" selection-end-line="226" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -366,7 +366,7 @@
       <workItem from="1485045345339" duration="48000" />
       <workItem from="1485347683532" duration="33000" />
       <workItem from="1485347752293" duration="8613000" />
-      <workItem from="1485425744111" duration="404000" />
+      <workItem from="1485425744111" duration="598000" />
     </task>
     <task id="LOCAL-00001" summary="Second stage text animation fixed">
       <created>1484925912204</created>
@@ -382,11 +382,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485007570262</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added game links">
+      <created>1485426274503</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1485426274503</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100926000" />
+    <option name="totallyTimeSpent" value="101120000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -433,7 +440,8 @@
     <MESSAGE value="Added final content and animations" />
     <MESSAGE value="Added various front-end enhancements" />
     <MESSAGE value="Added various front-end enhancements (oddly specific)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added various front-end enhancements (oddly specific)" />
+    <MESSAGE value="Added game links" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added game links" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -834,8 +842,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="255">
+          <caret line="226" column="14" lean-forward="false" selection-start-line="226" selection-start-column="14" selection-end-line="226" selection-end-column="14" />
           <folding />
         </state>
       </provider>
