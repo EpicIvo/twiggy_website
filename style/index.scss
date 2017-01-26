@@ -15,6 +15,21 @@ body {
   border: none;
 }
 
+a{
+  text-decoration: underline;
+  color: #6F584B;
+}
+
+a:active{
+  text-decoration: underline;
+  color: #6F584B;
+}
+
+a:visited{
+  text-decoration: underline;
+  color: #6F584B;
+}
+
 .container {
   height: 600vh;
   .overlayAnimations {
@@ -113,12 +128,13 @@ body {
       }
       font: {
         size: 2em;
-        family: $SecondFont;
+        family: $ThirdFont;
       }
     }
   }
   //Play section
   .play {
+    z-index: 5000000000;
     width: $totalWidth;
     height: $totalHeight;
     position: fixed;
@@ -166,6 +182,7 @@ body {
   }
   //Earn section
   .earn {
+    z-index: 5000000000;
     width: $totalWidth;
     height: $totalHeight;
     position: fixed;
@@ -211,6 +228,7 @@ body {
   }
   //plant Section
   .plantSection {
+    z-index: 5000000000;
     width: $totalWidth;
     height: $totalHeight;
     position: fixed;

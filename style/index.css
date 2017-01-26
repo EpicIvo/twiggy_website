@@ -6,6 +6,18 @@ body {
   padding: 0;
   border: none; }
 
+a {
+  text-decoration: underline;
+  color: #6F584B; }
+
+a:active {
+  text-decoration: underline;
+  color: #6F584B; }
+
+a:visited {
+  text-decoration: underline;
+  color: #6F584B; }
+
 .container {
   height: 600vh; }
   .container .overlayAnimations {
@@ -79,8 +91,9 @@ body {
       letter-spacing: 8px;
       margin-top: 20vh;
       font-size: 2em;
-      font-family: "Indie Flower", cursive; }
+      font-family: "Nunito", sans-serif; }
   .container .play {
+    z-index: 5000000000;
     width: 100%;
     height: 100vh;
     position: fixed; }
@@ -113,6 +126,7 @@ body {
       .container .play .playText .playTextContent::before {
         border-radius: 27px; }
   .container .earn {
+    z-index: 5000000000;
     width: 100%;
     height: 100vh;
     position: fixed; }
@@ -144,6 +158,7 @@ body {
         padding: .5%;
         width: 36%; }
   .container .plantSection {
+    z-index: 5000000000;
     width: 100%;
     height: 100vh;
     position: fixed; }
